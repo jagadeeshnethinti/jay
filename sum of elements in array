@@ -1,0 +1,12 @@
+int main() {
+   int n,k;
+   int arr[30];
+   scanf("%d",&n);
+   arr[0]=-1;
+   arr[1]=1;
+   for(k=2;k<=n+1;k++)
+   {
+   arr[k]=arr[k-1]+arr[k-2];
+   printf("%d ",arr[k]);
+   }
+}
